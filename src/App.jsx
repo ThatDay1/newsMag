@@ -1,34 +1,67 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <div>
+      <button type="button" classNameNameName="btn btn-primary">
+        Primary
+      </button>
+      <button type="button" classNameNameName="btn btn-secondary">
+        Secondary
+      </button>
+      <button type="button" classNameNameName="btn btn-success">
+        Success
+      </button>
+      <button type="button" classNameNameName="btn btn-danger">
+        Danger
+      </button>
+      <button type="button" classNameNameName="btn btn-warning">
+        Warning
+      </button>
+      <button type="button" classNameNameName="btn btn-info">
+        Info
+      </button>
+      <button type="button" classNameNameName="btn btn-light">
+        Light
+      </button>
+      <button type="button" classNameNameName="btn btn-dark">
+        Dark
+      </button>
+
+      <button type="button" classNameNameName="btn btn-link">
+        Link
+      </button>
+      <div classNameName="dropdown">
+        <button
+          classNameName="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Dropdown button
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        <ul classNameName="dropdown-menu">
+          <li>
+            <a classNameName="dropdown-item" href="#">
+              Action
+            </a>
+          </li>
+          <li>
+            <a classNameName="dropdown-item" href="#">
+              Another action
+            </a>
+          </li>
+          <li>
+            <a classNameName="dropdown-item" href="#">
+              Something else here
+            </a>
+          </li>
+        </ul>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <div className="spinner-border" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </div>
+    </div>
   )
 }
 
